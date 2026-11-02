@@ -1,0 +1,53 @@
+/* style.css - ملف التنسيق الموحد لجميع الصفحات */
+/* الخطوط: تنسيق جميع الكلمات من مكان واحد */
+body, table, input, select, textarea, button, legend, label {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+}
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+
+body { direction: rtl; background-color: #f4f7fa; color: #222222; margin: 0; padding: 0; }
+#header { background-color: #1f4e79; color: #ffffff; padding: 18px 30px; }
+#header h1 { margin: 0; }
+#nav { background-color: #2e75b6; padding: 0 20px; }
+#nav ul { list-style-type: none; margin: 0; padding: 0; }
+#nav li { display: inline-block; }
+#nav a { display: block; color: #ffffff; text-decoration: none; padding: 12px 20px; }
+#nav a:hover, #nav a.active { background-color: #1f4e79; }
+#maincontent { max-width: 1000px; margin: 20px auto; background-color: #ffffff; padding: 20px 30px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+#footer { text-align: center; color: #666666; padding: 15px; }
+h2 { color: #1f4e79; border-bottom: 2px solid #2e75b6; padding-bottom: 5px; }
+.collapsible h2 { cursor: pointer; }
+
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th { background-color: #2e75b6; color: #ffffff; }
+th, td { border: 1px solid #b7c9dc; padding: 8px; text-align: center; }
+tr.datarow:hover { background-color: #eaf1f8; }
+.ltr { direction: ltr; unicode-bidi: embed; }
+.carimg { width: 90px; height: 45px; }
+tr.detailsrow { display: none; }
+tr.detailsrow td { background-color: #eaf1f8; text-align: right; }
+.detailsinner { display: none; }
+.hl { background-color: #fff3c4; }
+
+/* عناصر الإدخال النصية: تنسيقها من مكان واحد */
+input[type="text"] {
+  width: 260px; padding: 7px; color: #1f4e79; background-color: #fdfdfd;
+  border: 1px solid #7f9db9; border-radius: 4px;
+}
+input.invalid { border-color: #c0392b; background-color: #fdecea; }
+fieldset { border: 1px solid #2e75b6; border-radius: 6px; padding: 15px; margin-top: 15px; }
+legend { color: #1f4e79; font-weight: bold; padding: 0 8px; }
+.formrow { margin-bottom: 14px; }
+.formrow label { display: inline-block; width: 190px; }
+.error { color: #c0392b; margin-right: 8px; }
+.btn { background-color: #2e75b6; color: #ffffff; border: none; border-radius: 6px; padding: 10px 28px; cursor: pointer; }
+.btn:hover { background-color: #1f4e79; }
+#bookingsection { display: none; }
+#selectmsg { display: none; }
+
+/* نافذة النتيجة */
+#overlay { display: none; position: fixed; top: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.55); z-index: 10; }
+#resultbox { background-color: #ffffff; width: 600px; max-width: 92%; margin: 60px auto; padding: 20px 25px; border-radius: 8px; max-height: 80%; overflow: auto; }
+.total { font-weight: bold; background-color: #eaf1f8; }
